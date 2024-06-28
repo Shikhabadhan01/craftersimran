@@ -1,0 +1,369 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Jost', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+.banner{
+    background: linear-gradient(rgba(0,0,0,0.1),#5c1299) , url(bg.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.logo{
+    width: 140px;
+    position: absolute;
+    top: 4%;
+    left: 3%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display :inline-block;
+    margin: 25px;
+}
+a{
+    display: inline-block;
+    background: rgba(0,0,0,0.1);
+    color: white;
+    padding: 4px 8px; 
+    margin: 2px 0;
+    border-radius:30px ;
+    transition: background 0.5s;
+}
+p{
+    color:white;
+}
+.navbar a:hover{
+    background:rgb(156, 113, 113);
+}
+.down-arrow{
+    position:absolute;
+    top:85%;
+    right: 11%;
+}
+.down i{
+    display: inline-block;
+    background: rgba(0,0,0,0.1);
+    color: white;
+    padding: 4px 8px;
+    margin: 2px 0;
+    border-radius:30px ;
+    transition: background 0.5s;
+}
+.down i:hover{
+    background-color: rgb(156, 113, 113);
+    color: white;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    color: white;
+    text-align: center;
+    padding-top: 180px;
+}
+.col-2{
+  max-width: 100%;
+}
+.col-2 h1{
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.col-2 p{
+    font-size: 25px;
+}
+.btn{
+    display: inline-block;
+    background: rgba(170, 102, 102, 0.1);
+    color: white;
+    padding: 8px 30px;
+    margin: 30spx 0;
+    border-radius:30px ;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: rgb(156, 113, 113);
+}
+
+#ban.sticky{ 
+    background:#5c1299;
+    padding: 20px 10px;
+    box-shadow: 0px 0px 10px rgba(0 0 0 /10%);
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.7) ;
+    min-width: 100px;
+    padding: 4px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #f8effa;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(156, 113, 113);
+}
+/* trending section*/
+.center-text h2{
+    color: white;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.center-text span{
+    color: red;
+}
+.products{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,auto));
+    gap: 2rem;
+}
+.simran{
+    position: relative;
+    transition: all .5s;
+}
+.simran img{
+    width: 20%;
+    height: auto;
+    transition: all .5s ease;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    transition: all .5s ease;
+}
+.simran p{
+    text-align: right;
+    padding: 120px;
+    margin-left: 80px;
+    color: #000;
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.simran span{
+    color: red;
+}
+.prabh span{
+    color: red;
+}
+.prabh .img2{
+    float: right;
+    margin-top: 30px;
+    margin-right: 30px;
+    width: 20%;
+    height: auto;
+}
+
+.prabh p{
+    padding: 100px;
+    color: #000;
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 90px;
+
+}
+.monkey{
+    position: relative;
+    transition: all .5s;
+}
+.monkey img{
+    width: 100%;
+    height: auto;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.monkey img:hover{
+    transform: scale(1.04);
+}
+.monkey h4{
+    cursor: pointer;
+}
+h9 {
+    margin-bottom: 20px;
+}
+.contact{
+    background-color:#5c1299 ;
+    align-items: right;
+    padding: 20px;
+    left: 25%;
+}
+.contact-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(60px, auto));
+    gap: 1rem;
+}
+.contact-info h4{
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.contact-info p{
+    cursor: pointer;
+    transition: all;
+}
+.contact-info p:hover{
+    color : rgb(156, 113, 113);
+}
+.social-icon i{
+    margin-right: 10px;
+    font-size: 20px;
+    transition: all;
+}
+
+.end-text{
+    background-color: #5c1299;
+    text-align: center;
+    padding: 20px;
+}
+.end-text p{
+    color: black;
+ 
+    text-transform: capitalize;
+}  
+/*about*/
+.background-container{
+    text-align: center;
+    padding: 70px;
+    color: white;
+    size:20px;
+}
+
+
+/*contact*/
+.contact1 h1{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    text-decoration: underline;
+ 
+}
+.contact1 p{
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
+.content{
+    padding: 50px ;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    flex-direction: column;
+}
+.contact2{
+    padding: 30px ;
+    justify-content: center;
+    color: aliceblue;
+}
+.contactform{
+    padding: 0px;
+    color: white;
+}
+h2{
+    font-size: 30px;
+    color: white;
+   text-decoration-line: underline;
+}
+.contact p{
+    text-align: left;
+    font-size: 20px ;
+}
+.inputbox{
+    padding: 2px;
+    width: 100%;
+}
+.insta{
+    padding: 30px;
+}
+.insta :hover{
+    background-color: rgb(156, 113, 113);
+    color: white;
+}
+.price1 h3{
+    position: absolute;
+    top: 80%;
+    left: 3%;
+}
+.price1 h6{
+    position: absolute;
+    top: 85%;
+    left: 3%;
+    font-size: x-large;
+}
+.lion img{
+    position: absolute;
+    top: 20%;
+    left: 3%;
+}
+.product-text1{
+    position: absolute;
+    top: 70%;
+    left: 3%;
+}
+.ratting1{
+    position: absolute;
+    top: 75%;
+    left: 3%;
+
+}
+.price form {
+    align-items: right;
+    max-width: 0px;
+    margin: 0 auto;
+}
+
+.price label,
+input {
+    align-items: right;
+    display: block;
+    margin-bottom: 0px;
+}
+
+.price input[type="submit"] {
+    align-items: right;
+    margin-top: 0px;
+}
+.ban{
+    background: linear-gradient(rgba(0,0,0,0.1),#5c1299) , url(1.jpeg);
+}
+orderForm{
+    background-color: rgba(0,0,0,0.1);
+}
